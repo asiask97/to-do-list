@@ -1,0 +1,209 @@
+/* varables */ 
+:root{
+    --lightblue: #B5C6E0;  
+} 
+
+/* reset*/
+
+html, body {
+    margin: 0;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+
+}
+
+
+/* base styles */ 
+
+body{
+    background: white;
+    font-family:'monospace regular';
+
+}
+.otherLists{
+    position: relative;
+    text-align: center;
+
+}
+.pluslistbox{
+    position: relative;
+    bottom: -95px;
+
+}
+.listbox{
+    background: linear-gradient(180deg, #EBF4F5 6.25%, #D8E3ED 51.74%, #B5C6E0 106.25%);
+    border-radius: 21px; 
+}
+
+.listContainer{
+    box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 18px 18px 0px 0px;
+}
+
+.li{
+    margin: 20px ;
+    background: var(--lightblue);
+    border-radius: 9px;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 9px;
+
+}
+
+.delete{
+    padding: 20px 5px 20px 5px ;
+    border-radius: 0px 9px 9px 0px;
+    transition: 0.1s ease-in-out;
+}
+.delete:hover{
+    background-color: #ffffff;
+}
+
+span:hover path{
+    fill: #B5C6E0;
+}
+
+.plus{
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 40px 40px 0px 0px;
+    width: 75px;
+    height: 73px;
+    bottom: 0;
+    left: 40%;
+    margin: 0;
+}
+
+.plusinsdie{
+    position: relative;
+    bottom: -10px;
+    left: 10px;;
+
+}
+
+
+.inputcontainer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+
+}
+
+.positioninput{
+
+    position: fixed;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 56px 20px 21px 20px; 
+
+
+}
+
+.inputcontainer1{
+    visibility: hidden;
+
+}
+
+input[type='text']{
+    border-bottom: 1px solid black;
+    font-size: 24px;
+}
+
+h2{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+
+/* fonts */
+@font-face{
+    font-family:'monospace regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+li {
+    font-size: 18px;
+}
+
+
+/* mobile style */
+.body{ height : 100%}
+
+.otherLists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 85px;
+    margin-bottom: 10px
+}
+
+.listbox{
+    width: 100%;
+    max-width: 95px;
+    height: 128px;
+}
+
+
+.container{
+    max-height: 100vh;
+    height: 100vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.arrowUP{
+    padding-top: 15px;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+
+   /*visablity hidden untill you reach the end*/
+   /* visibility: hidden;*/
+}
+
+.listContainer{
+    margin-top: 15px;
+    flex-grow: 100;
+    overflow: scroll;
+
+}
+
+ul{
+
+    margin-bottom: 65px;
+}
+
+
+
+/* tablet style */
+
+/* desktop style */
+
